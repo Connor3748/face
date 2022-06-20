@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+	<form method="POST" action="/child/recognition" enctype="multipart/form-data">
+        <p> 반 이름(생략 가능) : <input type="text" id="class" name="classname"></p>
+        <p> 얼굴 인식 : <input type="file" id="image" name="image" multiple></p>
+		<p> 사진을 입력하고 제출버튼을 누르세요. <input type="submit" value="제출" onclick="alert('사진 입력 완료!')" /></p>
+	</form>
+<body>
+    <div class="bd-example" align="middle">
+        <img src="{{url_for('static', filename='test.jpg')}}" align="middle" style="width: 25vw; min-width: 140px;" />
+    </div>
+</body>
+</html>
